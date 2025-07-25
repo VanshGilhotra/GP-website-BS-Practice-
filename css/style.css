@@ -1,0 +1,722 @@
+/* #ffc451 is the main color its like orange */
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-toggle {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+.bars{
+    color: #fff;
+}
+
+hr{
+    margin: 0 !important;
+}
+
+.text-black {
+    color: #060606;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: black!important; */
+    --heading-color: #ffffff;
+    --contrast-color: #ffffff;
+    color: #444444;
+    background-color: rgb(0 0 0 / 0%);
+    padding: 10px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+.header .logo {
+    line-height: 1;
+}
+
+.header .logo h1 {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+span {
+    font-size: 32px;
+    color: #ffc451;
+}
+
+.header a {
+    text-decoration: none !important;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header li {
+    padding: 18px 15px;
+}
+
+.header ul li a {
+    color: #f8f8f8;
+    transition: all 0.5s ease;
+    font-size: 17px;
+    color: #f8f8f8;
+    /* font-weight: 500; */
+}
+
+.header ul li a.active {
+    color: #ffc451;
+}
+
+.header ul li a:hover {
+    color: #ffc451;
+}
+
+#navbar.scrolled {
+    background-color: #2a2727;
+}
+
+.btn-getstarted {
+    font-size: 14px;
+    border: 2px solid #ffc451;
+    padding: 8px 30px;
+    margin: 0px 0px 0px 30px;
+    color: #f8f8f8;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.btn-getstarted:hover {
+    background-color: #ffc451;
+    color: #000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* ---------- HOME PAGE STARTS ---------- */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero img {
+    inset: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 120px 0 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section,
+.section {
+    color: #ffff;
+    background-color: 060606;
+    scroll-margin-top: 60px;
+    padding: 60px 0px;
+    overflow: clip;
+}
+
+.dark-background {
+    background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #2a2727;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 0);
+    margin-right: calc(-.5 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem);
+}
+
+.hero h2 {
+    margin: 0;
+    color: #ffff !important;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.hero p {
+    /* color: #f8f8f8; */
+    /* color: #f8f8f8; */
+    color: #ffff;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: "poppins";
+    letter-spacing: 2px;
+}
+
+.icon-box {
+    border: 1px solid gray;
+    padding: 30px 40px;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.icon-box:hover {
+    border-color: #ffc451;
+}
+
+i {
+    color: #ffc451;
+    font-size: 30px;
+}
+
+.hero h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.hero h3 a {
+    text-decoration: none !important;
+    /* color: #f8f8f8a6; */
+    color: #fff;
+    transition: all 0.7s ease;
+}
+
+.icon-box:hover h3 a {
+    color: #ffc451 !important;
+}
+
+
+/* ------ About Us ------ */
+.about {
+    color: #060606;
+
+}
+
+/* ----- Carousel ----- */
+.clients .img-thumbnail {
+    border: none !important;
+    width: 100px !important;
+    filter: grayscale(100%);
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.clients .img-thumbnail:hover {
+    filter: grayscale(0%);
+}
+
+/* ----- Fearures ----- */
+.feature-item i {
+    font-size: 45px !important;
+    text-align: center;
+}
+
+.feature-item p {
+    font-size: 15px;
+}
+
+/* ----- Services ----- */
+.title {
+    color: #6c757d;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.title::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ffc451;
+    margin: 4px 10px;
+}
+
+.section-title {
+    padding-bottom: 60px;
+}
+
+.section-title h1 {
+    font-weight: 600;
+}
+
+.icon {
+    justify-content: center !important;
+}
+
+.services .service-item .icon {
+    background: #ffc451;
+    color: #060606 !important;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.service-item {
+    padding: 80px 20px;
+    border: 1px solid #6c757d23;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.service-item p {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: #060606;
+}
+
+.service-item:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Call To Action ----- */
+.cta-content {
+    padding: 0px 7rem;
+}
+
+.call-to-action {
+    background-image: url("../images/neon-bg.jpeg");
+    background-image: url("../images/cta-bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    background-size: cover;
+    padding: 90px 20px;
+}
+
+.call-to-action h3 {
+    font-weight: 700;
+}
+
+.call-to-action p {
+    /* line-height: 30px; */
+    font-size: 14px;
+
+}
+
+.btn-cta {
+    font-size: 14px;
+    border: 2px solid #ffc451;
+    padding: 12px 40px;
+    text-decoration: none;
+    margin: 10px 0px 0px 0px;
+    color: #f8f8f8;
+    border-radius: 4px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.btn-cta:hover {
+    background-color: #ffc451;
+    text-decoration: none;
+    color: #060606;
+}
+
+/* ----- Portfolio ----- */
+input[name="filter"] {
+    display: none;
+}
+
+.btns label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background: #f0f0f0;
+    color: #2a2727;
+    cursor: pointer;
+    border: 0px solid #ccc;
+    transition: background 0.3s, color 0.3s;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .item {
+    width: 30%;
+    margin: 1%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.gallery .item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Show relevant items with fade-in */
+input#all:checked~.gallery .item,
+input#app:checked~.gallery .item.app,
+input#card:checked~.gallery .item.card,
+input#web:checked~.gallery .item.web {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Highlight active filter label */
+input#all:checked~.btns label[for="all"],
+input#app:checked~.btns label[for="app"],
+input#card:checked~.btns label[for="card"],
+input#web:checked~.btns label[for="web"] {
+    background: orange;
+    color: white;
+}
+
+
+/* ----- STATS ----- */
+.stat-items {
+    padding: 10px;
+}
+
+.stat-icon {
+    font-size: 42px;
+    padding-top: 31px;
+    /* font-weight: 300; */
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.stat-content-span {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ----- TESTIMONIAL ----- */
+.testimonial {
+    background-image: url('../images/testimonial-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 150px;
+}
+
+.testi-heading {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.profession {
+    color: #949fa8;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.stars i {
+    color: #ffc451;
+    font-size: 15px;
+    align-items: center !important;
+}
+
+.testi-content span {
+    font-size: 14px;
+    color: #fff;
+}
+
+.testi-content i {
+    color: grey;
+    font-size: 22px;
+}
+
+/* ----- TEAM ----- */
+.team-member {
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.member-social {
+    opacity: 0;
+    color: #000;
+    margin-top: -25px;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    justify-content: space-evenly !important;
+}
+
+.member-social i {
+    margin-top: -15px;
+    font-size: 25px;
+    color: #444444;
+    background-color: #252525;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.team-member:hover .member-social {
+    opacity: 1;
+    /* filter: grayscale(50); */
+}
+
+.member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-info {
+    padding: 25px 15px;
+}
+
+.member-info h3 {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.member-info p {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* ----- Contact Form ----- */
+.map {
+    margin: 0;
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+.common-content {
+    padding: 20px 10px;
+}
+
+.common-content i {
+    color: #000;
+    background-color: #ffc451;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.content {
+    padding-left: 5px;
+}
+
+.content h3 {
+    font-size: 20px;
+}
+
+.content p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.contact{
+    padding-bottom: 0!important;
+}
+
+form input,
+textarea {
+    padding: 10px 15px;
+    font-size: 14px;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #949fa857;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6c757d88;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #ffc451;
+    outline: none;
+    /*remove default blue outline */
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact button[type=submit] {
+    color: #060606;
+    background: #ffc451;
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.contact button[type=submit]:hover {
+    background-color: #ffc551c0;
+}
+
+/* ----- FOOTER ----- */
+.footer-icon {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    width: 40px;
+    /* height: 40px; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    background-color: #ffc451;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 0 30px;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer li i {
+    font-size: 15px;
+}
+
+.footer a:hover {
+    color: #ffc451;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #1c1c1c;
+    margin-right: 8px;
+    color: #ffc451;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.footer .footer-links i {
+    margin-right: 5px;
+    color: #ffc451;
+}
+
+.footer-links li {
+    padding-top: 10px;
+}
+
+.footer-links li a {
+    font-size: 12px;
+}
+
+.news-title {
+    font-size: 13px;
+}
+
+.footer .subscribe-input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.footer .subscribe-button {
+    background-color: #ffc451;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
