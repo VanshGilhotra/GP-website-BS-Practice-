@@ -1,7 +1,8 @@
 /* ______ Features ______ */
-@media(min-width:320px) and (max-width:767px) {
+@media(min-width:320px) and (max-width:768px) {
     .hero h2 {
         font-size: 30px;
+        padding-top: 60px;
     }
 
     .service-item {
@@ -18,12 +19,18 @@
         padding: 0px 0px !important;
     }
 
+    .call-to-action p{
+        text-align: justify;
+        font-size: 13px;
+        padding: 0px 28px;
+    }
+
     /* ---- NAV LINKS FIXING ----- */
     .nav-links-wrapper {
         display: none !important;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 47px;
         left: 0;
         background-color: #000;
         width: 100%;

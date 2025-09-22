@@ -49,46 +49,46 @@
         </div> <!-- /.row -->
 
         <script type="text/javascript">
-      $('#img.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        autoplay:true,
-        autoplaytimeot:5000,
-        margin:30,
-        responsive:{
-            0:{
-                items:1
-            },
-            467:{
-                items:2
-            },
-            992:{
-              items:3
+          $('#img.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots:false,
+            autoplay:true,
+            autoplaytimeot:5000,
+            margin:30,
+            responsive:{
+                0:{
+                    items:1
+                },
+                467:{
+                    items:2
+                },
+                992:{
+                  items:3
+                }
+                
             }
-            
-        }
-      })
-      $('#flag.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        autoplay:true,
-        autoplaytimeot:5000,
-        margin:30,
-        responsive:{
-            300:{
-                items:1
-            },
-            467:{
-                items:2
-            },
-            992:{
-              items:4
+          })
+          $('#flag.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots:false,
+            autoplay:true,
+            autoplaytimeot:5000,
+            margin:30,
+            responsive:{
+                300:{
+                    items:1
+                },
+                467:{
+                    items:2
+                },
+                992:{
+                  items:4
+                }
+                
             }
-            
-        }
-      })
+          })
     </script>
